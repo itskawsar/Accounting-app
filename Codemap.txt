@@ -1,0 +1,53 @@
+
+ফাইল সিস্টেমঃ
+========
+backup: ব্যাকআপের জন্য রিজার্ভ ফোল্ডার
+config: ইউজারের জন্য আপ্লিকেশান ডাটা
+system: মুল আপ্লিকেশানটি কোডইগ্নিটারের লাইব্রেরী সহ
+user_guide: কোডইগ্নিটারের ইউজার গাইড
+.htaccess: URL থেকে index.php মুছে ফেলার জন্য (এপাছি)
+index.php: এই ফাইল থেকে বেস কন্ট্রোলারটি চালানো হয়।
+web.config: URL থেকে index.php মুছে ফেলার জন্য (আইআইএস)
+
+
+
+ডেভেল্পমেন্ট ডিরেক্টরী পরিচিতিঃ
+================
+system/application/assets: css, javascript, images এবং অন্যান্য ফাইলগুলো থাকবে এই ফোল্ডারে।
+system/application/config: ডেভেলপমেন্ট কনফিগারেশান
+system/application/controllers: কন্ট্রোলার
+system/application/errors: ইরোরস
+system/application/helpers: হেল্পারস
+system/application/hooks: হুক
+system/application/language: ভাষা
+system/application/libraries: লাইব্রেরী
+system/application/models: মডেল
+system/application/views: টেমপ্লেট
+
+
+
+
+
+ডিফল্ট কন্ট্রোলারঃ
+=========
+ডিফল্ট ভাবে কন্ট্রোলার সেট করতে হবে যা রুট/হোম এ চালু হবে। 
+চালু করতে system/application/config/routes.php এর $route['default_controller'] তে সেট করতে হয়। 
+এখন welcome সেট করা আছে। এর মানে যখন রুট/হোম চালু হয় তখন system/application/controllers/welcome.php ফাইলটি প্রথম শুরু হয়।
+
+
+ডেভেলপমেন্ট কনফিগারেশানঃ
+===============
+system/application/config/config.php ফাইলটতে সকল ধরনের কনফিগারেশান আছে 
+এবং চাইলে নতুন কোন প্রোপারটি যোগ করা যায়। তবে গুরুত্বপূর্ণ হল $config['base_url']
+
+
+
+অটোলোডঃ
+=======
+বেজ কন্ট্রোলার যখন শুরু হয় তখন বিভিন্ন বেজ লাইব্রারীর পাশাপাশি ডেভেলাপমেন্ট এর অনেক লাইব্রারী, মডেল, হেল্পার, কনফিগ, 
+প্লাগিন ইত্যাদি অটোলোড করা সম্ভব। system/application/config/autoload.php
+যদি দরকার না হয়, তাহলে অটোলোড স্কিপ করা যেতে পারে।
+
+
+
+

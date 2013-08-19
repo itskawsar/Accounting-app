@@ -1,0 +1,74 @@
+Webzash Version 1.7 2012-12-21
+------------------------------
+
+    * Switched to Apache License, Version 2.0
+
+Webzash Version 1.6 2012-02-11
+------------------------------
+
+    * Added all columns for INSERT statements
+    * Removed the sample.ini account file
+    * Added web.config for IIS support
+    * Fixed bug in closing balance calculation
+    * git master branch now points to v1.x
+
+Webzash Version 1.5 2011-12-25
+------------------------------
+
+    * Changed A/C to account
+    * Updated the system/application/controllers/admin/initialize.sql
+    * Changed string named to called
+    * Changed voucher to entries
+    * Changed type of ledger type column to int
+    * Added database update script
+
+Webzash Version 1.4 2011-10-31
+------------------------------
+
+    * Fixed javascript floating point calculation bug
+
+Webzash Version 1.3 2011-05-21
+------------------------------
+
+    * Fixed floating point calculation bug
+
+Webzash Version 1.2 2011-02-02
+------------------------------
+
+    * Added dynamic voucher types
+    * Added dynamic voucher types management interface
+    * Added support for empty voucher number
+    * Updated columns for voucher number and tag id to allow NULL values
+
+Webzash Version 1.1 2011-01-28
+------------------------------
+
+    * Added application shortcuts
+    * Fixed many bugs
+    * Removed options to Print, Edit and Delete from voucher add and edit
+    * Updated some pending database code to use active record
+
+Webzash Version 1.0 2011-01-22
+------------------------------
+
+    * Code refactoring
+
+Webzash Version 1.0-beta3 2011-01-19
+------------------------------------
+
+   * Reconciliation
+
+Webzash Version 1.0-beta2 2011-01-12
+------------------------------------
+
+    * Added user authentication
+    * Added role based permissions
+    * Added voucher auto numbering
+    * Added Account Locked
+    * Added Help
+    * Added Tooltips
+    * Added jQuery colorpicker plugin
+    * Added Status report
+    * Updated normal SQL queries with active record queries
+    * Updated status messages
+    * Removed support for draft vouchers

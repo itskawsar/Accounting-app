@@ -1,0 +1,294 @@
+#left-col {
+	background:none repeat scroll 0 0 #FFFFFF;
+	float:left;
+	width:350px;
+}
+
+#right-col {
+	background:none repeat scroll 0 0 #FFFFFF;
+	float:left;
+	width:350px;
+}
+
+.settings-container {
+	margin-bottom:15px;
+}
+
+.settings-title a {
+	font-size:16px;
+	text-decoration:underline;
+	color:#000000;
+}
+
+.settings-desc {
+	color:#999999;
+}
+
+a.anchor-link-a {
+	color:#1A2745;
+}
+
+a.anchor-link-b {
+	color:#000000;
+	text-decoration:none;
+}
+
+.float-right {
+	float:right;
+}
+
+/* Fieldset */
+.fieldset-auto-width {
+	display:inline;
+	padding:20px;
+	padding-right:50px;
+}
+
+.fieldset-auto-width legend {
+	border: 1px solid #0099CC;
+	background:#E5F1F4;
+	padding:4px;
+}
+
+/* Form */
+.form-help-text {
+	font-size:12px;
+	font-weight:italic;
+}
+
+.form-warning-text {
+	font-size:12px;
+	font-weight:italic;
+	color:#FF0000;
+}
+
+/******************************** PAGINATION **********************************/
+#pagination-container {
+	margin-top:20px;
+	margin-bottom:50px;
+}
+
+ul#pagination-flickr {
+	border:0;
+	margin:0;
+	padding:0;
+	float:none;
+}
+
+#pagination-flickr li {
+	border:0;
+	margin:0;
+	padding:0;
+	font-size:11px;
+	list-style:none;
+}
+
+#pagination-flickr a {
+	border:solid 1px #DDDDDD;
+	margin-right:2px;
+}
+
+#pagination-flickr .previous-off,
+#pagination-flickr .next-off {
+	color:#666666;
+	display:block;
+	float:left;
+	font-weight:bold;
+	padding:3px 4px;
+}
+
+#pagination-flickr .next a,
+#pagination-flickr .previous a {
+	font-weight:bold;
+	border:solid 1px #FFFFFF;
+}
+
+#pagination-flickr .active{
+	color:#000000;
+	font-weight:bold;
+	display:block;
+	float:left;
+	padding:4px 6px;
+}
+
+#pagination-flickr a:link,
+#pagination-flickr a:visited {
+	color:#0063e3;
+	display:block;
+	float:left;
+	padding:3px 6px;
+	text-decoration:none;
+}
+
+#pagination-flickr a:hover{
+	border:solid 1px #666666;
+}
+
+/********************************* DASHBOARD **********************************/
+
+#dashboard-summary {
+	width:500px;
+	float:left;
+}
+
+.dashboard-item {
+	-moz-border-radius:3px 3px 3px 3px;
+	border-radius:3px 3px 3px 3px;
+	float:left;
+	border: 1px solid #BBBBBB;
+	margin-bottom:20px;
+	width:500px;
+}
+
+.dashboard-title {
+	color: #464646;
+	background-color:#EEEEEE;
+	padding:8px;
+	font-weight:bold;
+}
+
+.dashboard-content {
+	padding:8px;
+}
+
+#dashboard-log {
+	float:left;
+	width:450px;
+	margin-left:20px;
+}
+
+.dashboard-log-item {
+	-moz-border-radius:3px 3px 3px 3px;
+	border-radius:3px 3px 3px 3px;
+	float:left;
+	border: 1px solid #BBBBBB;
+	margin-bottom:20px;
+	width:440px;
+}
+
+.dashboard-log-title {
+	color: #464646;
+	background-color:#EEEEEE;
+	padding:8px;
+	font-weight:bold;
+}
+
+.dashboard-log-content {
+	padding:8px;
+}
+
+/******************************* TAGS *****************************************/
+#tag-sidebar {
+	float:right;
+	text-align:left;
+	width:120px;
+	border:1px solid #999999;	
+}
+
+#tag-sidebar .tag-title {
+	background-color:#EEEEEE;
+	font-weight:bold;
+	border-bottom:1px solid #999999;
+	padding:8px 8px 2px 8px;
+}
+
+#tag-sidebar .tag-title a {
+	font-weight:normal;
+	text-decoration:none;
+	font-size:12px;
+	color:#FF0000;
+}
+
+#tag-sidebar ul {
+	list-style:none;
+	margin:0;
+	padding:10px 10px 10px 10px;
+}
+
+#tag-sidebar ul li {
+	padding-bottom:5px;
+}
+
+#tag-sidebar ul li a.tag-active {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+.tags {
+	font-size:10px;
+	font-weight:bold;
+	text-decoration:none;
+	margin:0 5px 0 1px;
+	padding:3px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+/***************************** RECENT ACTIVITY ********************************/
+#recent-activity-list {
+	margin-left:30px;
+	padding:0px;
+	list-style-type:square;
+}
+
+/********************************** TOOL TIPS *********************************/
+#tooltip-content-1 {
+	display:none;
+	position:absolute;
+	padding:10px;
+	border:3px solid #AF8A31;
+	background-color:#FFC848;
+	text-align:left;
+}
+
+#tooltip-content-2 {
+	display:none;
+	position:absolute;
+	padding:10px;
+	border:3px solid #AF8A31;
+	background-color:#FFC848;
+	text-align:left;
+}
+
+#tooltip-content-3 {
+	display:none;
+	position:absolute;
+	padding:10px;
+	border:3px solid #AF8A31;
+	background-color:#FFC848;
+	text-align:left;
+}
+
+/************************************ HELP ************************************/
+ul#qa-list {
+	margin:0;
+	padding:0;
+}
+
+ul#qa-list li {
+	list-style:none;
+	padding:3px 0 3px 0;
+}
+
+ul#qa-list li .qa-heading {
+	font-weight:bold;
+}
+
+ul#qa-list li ul li {
+	list-style:square;
+	padding:3px 0 3px 0;
+}
+
+.qa-section {
+	margin:0 0 30px 0;
+}
+
+.qa-question {
+	font-weight:bold;
+	border-bottom:1px solid #AAAAAA;
+	margin:0 0 5px 0;
+}
+
+.qa-answer {
+	margin:0 0 0 20px;
+}

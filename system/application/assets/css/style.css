@@ -1,0 +1,176 @@
+body {
+	background:none repeat scroll 0 0 #DDDDDD;
+	color:#333333;
+	font:12px "Helvetica Neue","Lucida Grande","Helvetica Neue",Arial,sans-serif;
+	margin:0;
+	min-width:950px;
+	padding:0;
+	text-align:center;
+}
+
+#container {
+	margin:0 auto 0;
+	min-width:950px;
+	text-align:left;
+}
+
+#header {
+	background:none repeat scroll 0 0 #FFFFFF;
+	height:90px;
+	margin:0;
+	position:relative;
+	text-align:left;
+}
+
+#header #logo {
+	padding:35px 0 0 18px;
+	font-size:40px;
+	float:left;
+	width:70%;
+}
+
+#header #admin {
+	color:#000000;
+	font-size:15px;
+	display:block;
+	position:absolute;
+	background:none repeat scroll 0 0 #E5F1F4;
+	padding:0 15px 5px 15px;
+	-moz-border-radius:0 0 5px 5px;
+	margin:0 0 0 350px;
+}
+
+#header #info {
+	color:#000000;
+	display:block;
+	position:absolute;
+	right:18px;
+	top:20px;
+	background:none repeat scroll 0 0 #EEEEEE;
+	padding:10px;
+	font-size:15px;
+	-moz-border-radius: 10px;
+	border-radius: 1px;
+}
+
+#content #main {
+	background:none repeat scroll 0 0 #FFFFFF;
+	position:relative;
+	padding:10px 18px 10px 18px;
+	min-height:400px;
+}
+
+#content #sidebar {
+	background:none repeat scroll 0 0 #EEEEEE;
+	float:left;
+	width:20%;
+}
+
+#content #main #main-title {
+	font-size:19px;
+	padding:8px 0 8px 0;
+}
+
+#content #main  #main-content {
+	padding:10px 0 10px 0;
+	font-size:14px;
+}
+
+#footer {
+	color:#555555;
+	font-size:13px;
+	margin:9px 20px 18px 20px;
+	text-align:center;
+}
+
+
+#footer a {
+	color:#555555;
+	font-size:13px;
+	text-align:center;
+}
+
+/* PAGE MENU */
+#content #main ul#main-links-nav
+{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#content #main ul#main-links-nav li
+{
+	float:left;
+	margin:0 18px 0 0;
+}
+
+#content #main ul#main-links-nav li a {
+	-moz-border-radius:3px 3px 3px 3px;
+	border-radius:3px 3px 3px 3px;
+	background:repeat-x scroll 0 0 transparent;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-shadow:-1px -1px 0 #333333;
+	text-decoration:none;
+}
+
+/* MESSAGE BOX */
+#message-box {
+	border:solid 1px #787878;
+	background:#F0F0F0;
+	color:#222222;
+	margin:5px 0 12px 0px;
+	text-align:left;
+	display:block;
+	padding-right:20px;
+}
+
+#error-box {
+	border:solid 1px #C34A2C;
+	background:#FFBABA;
+	color:#222222;
+	margin:5px 0 12px 0px;
+	text-align:left;
+	display:block;
+	padding-right:20px;
+}
+
+#success-box {
+	border:solid 1px #FFEC8B;
+	background:#FFF8C6;
+	color:#222222;
+	margin:5px 0 12px 0px;
+	text-align:left;
+	display:block;
+	padding-right:20px;
+}
+
+/* COMMON */
+.clear {
+	clear:both;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.hidden-element {
+	display:none;
+}
+
+a.no-underline {
+	text-decoration:none;
+}
+
+.small-font {
+	font-size:12px;
+}
+
+/* NOT SO COMMON */
+#beta-area {
+	font-size:18px;
+	color:#00000;
+}
+

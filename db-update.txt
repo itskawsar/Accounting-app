@@ -1,0 +1,52 @@
+//--------------------------------- VERSION 4 ----------------------------------
+
+ALTER TABLE entry_types CHANGE bank_cash_ledger_restriction bank_cash_ledger_restriction INT(2) NOT NULL DEFAULT 1;
+
+ALTER TABLE ledgers CHANGE type type INT(2) NOT NULL DEFAULT '0';
+UPDATE ledgers SET type = '1' WHERE type = 'B';
+UPDATE ledgers SET type = '0' WHERE type = 'N';
+
+ALTER TABLE settings CHANGE manage_stocks manage_inventory INT(1) NOT NULL;
+
+RENAME TABLE vouchers TO entries;
+
+ALTER TABLE vouchers CHANGE voucher_type entry_type INT(5) NOT NULL;
+
+ALTER TABLE entry_items CHANGE voucher_id entry_id INT(11) NOT NULL;
+
+RENAME TABLE voucher_items TO entry_items;
+
+RENAME TABLE voucher_types TO entry_types;
+
+//--------------------------------- VERSION 3 ----------------------------------
+
+CREATE TABLE IF NOT EXISTS voucher_types (
+  id int(5) NOT NULL,
+  label varchar(15) NOT NULL,
+  name varchar(100) NOT NULL,
+  description varchar(255) NOT NULL,
+  base_type int(2) NOT NULL,
+  numbering int(2) NOT NULL,
+  prefix varchar(10) NOT NULL,
+  suffix varchar(10) NOT NULL,
+  zero_padding int(2) NOT NULL,
+  bank_cash_ledger_restriction int(2) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE settings DROP receipt_voucher_prefix;
+ALTER TABLE settings DROP payment_voucher_prefix;
+ALTER TABLE settings DROP contra_voucher_prefix;
+ALTER TABLE settings DROP journal_voucher_prefix;
+ALTER TABLE settings DROP voucher_number_padding;
+
+ALTER TABLE vouchers CHANGE type voucher_type INT(5) NOT NULL;
+ALTER TABLE vouchers CHANGE number number INT(11) NULL;
+ALTER TABLE vouchers CHANGE tag_id tag_id INT(11) NULL;
+
+//--------------------------------- VERSION 2 ----------------------------------
+
+ALTER TABLE voucher_items ADD reconciliation_date DATETIME NULL;
+
+ALTER TABLE ledgers ADD reconciliation INT(1) NOT NULL;
+

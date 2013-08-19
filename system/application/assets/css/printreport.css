@@ -1,0 +1,176 @@
+/*********************************** COMMON ***********************************/
+body {
+	color:#000000;
+	font:14px "Helvetica Neue","Lucida Grande","Helvetica Neue",Arial,sans-serif;
+	margin:20px;
+	padding:0;
+}
+
+/******************************** SPECIFIC ************************************/
+
+#print-account-name {
+	text-align:center;
+	font-size:17px;
+}
+
+#print-account-address {
+	text-align:center;
+	font-size:14px;
+}
+
+#print-report-title {
+	text-align:center;
+	font-size:17px;
+}
+
+#print-report-period {
+	text-align:center;
+	font-size:15px;
+}
+
+/************************************ COMMON **********************************/
+table.simple-table a {
+	text-decoration:none;
+	color:#000000;
+}
+
+/********************************* TRIAL BALANCE ******************************/
+table.trial-balance-table {
+	border:1px solid #000000;
+	border-collapse: collapse;
+}
+
+table.trial-balance-table tr th {
+	text-align:left;
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+	background-color:#EEEEEE;
+}
+
+table.trial-balance-table tr td {
+	text-align:left;
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+}
+
+table.trial-balance-table tr.tr-total {
+	border:1px solid #000000;
+}
+
+/********************************* BALANCE SHEET ******************************/
+table.balance-sheet-table {
+	border:1px solid #000000;
+	border-collapse: collapse;
+}
+
+table.balance-sheet-table tr th {
+	text-align:left;
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+	background-color:#EEEEEE;
+}
+
+table.balance-sheet-table tr td {
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+}
+
+table.balance-sheet-total-table {
+	border:1px solid #000000;
+	background-color:#EEEEEE;
+}
+
+table.balance-sheet-table td.td-group {
+	font-weight:bold;
+}
+
+/**************************** PROFIT AND LOSS ST ******************************/
+table.profit-loss-table {
+	border:1px solid #000000;
+	border-collapse: collapse;
+}
+
+table.profit-loss-table tr th {
+	text-align:left;
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+	background-color:#EEEEEE;
+}
+
+table.profit-loss-table tr td {
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+}
+
+table.profit-loss-table td.td-group {
+	font-weight:bold;
+}
+
+table.profit-loss-total-table {
+	border:1px solid #000000;
+	background-color:#EEEEEE;
+}
+
+/**************************** LEDGER ACCOUNT ST *******************************/
+table.ledgerst-table {
+	border:1px solid #000000;
+	border-collapse: collapse;
+}
+
+table.ledgerst-table tr th {
+	text-align:left;
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+	background-color:#EEEEEE;
+}
+
+table.ledgerst-table tr td {
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+}
+
+table.ledgerst-total-table {
+	border:1px solid #000000;
+	background-color:#EEEEEE;
+}
+
+table.ledgerst-table td.td-group {
+	font-weight:bold;
+}
+
+.small-font {
+	font-size:12px;
+}
+
+/**************************** RECONCILIATION ST *******************************/
+table.reconciliation-table {
+	border:1px solid #000000;
+	border-collapse: collapse;
+}
+
+table.reconciliation-table tr th {
+	text-align:left;
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+	background-color:#EEEEEE;
+}
+
+table.reconciliation-table tr td {
+	border:1px solid #000000;
+	padding:5px 30px 5px 5px;
+}
+
+table.reconciliation-total-table {
+	border:1px solid #000000;
+	background-color:#EEEEEE;
+}
+
+table.reconciliation-table .tr-reconcilied {
+	font-weight:bold;
+}
+
+@media print {
+	.hide-print {
+		display: none;
+	}
+}
